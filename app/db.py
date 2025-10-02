@@ -1,4 +1,4 @@
-# app/db.py
+
 from sqlalchemy import create_engine, Column, Integer, String, Text, DateTime
 from sqlalchemy.orm import declarative_base, sessionmaker
 import datetime
