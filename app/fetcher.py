@@ -1,4 +1,4 @@
-# app/fetcher.py
+
 import aiohttp, feedparser, hashlib
 from datetime import datetime
 from app.db import SessionLocal, Article
