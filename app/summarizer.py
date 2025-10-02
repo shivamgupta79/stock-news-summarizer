@@ -1,9 +1,9 @@
-# app/summarizer.py
+
 from transformers import pipeline
 from app.db import SessionLocal, Article
 from datetime import datetime
 
-# load a small summarizer (takes some time)
+
 summarizer = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
 
 def summarize_pending():
