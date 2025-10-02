@@ -1,4 +1,4 @@
-# app/scheduler.py
+
 from apscheduler.schedulers.background import BackgroundScheduler
 import asyncio
 from app.fetcher import fetch_rss_and_store
@@ -7,7 +7,7 @@ from app.summarizer import summarize_pending
 scheduler = BackgroundScheduler()
 
 def schedule_jobs():
-    # example RSS list
+ 
     feeds = [
         "https://finance.yahoo.com/rss/",
         "https://www.reuters.com/finance/rss"
