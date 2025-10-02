@@ -4,7 +4,7 @@ sqlalchemy
 aiohttp
 feedparser
 transformers
-torch             # or install cpu-only wheel as needed
+torch            
 apscheduler
 jinja2
 python-dotenv
