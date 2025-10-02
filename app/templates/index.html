@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"><title>Stock News Summaries</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-4">
+  <div class="container">
+    <h1>Stock News - AI Summaries</h1>
+    <div class="list-group mt-3">
+      {% for it in items %}
+        <a class="list-group-item list-group-item-action" href="{{ it.url }}" target="_blank">
+          <h5>{{ it.title }}</h5>
+          <p>{{ it.summary or "Summary pending..." }}</p>
+          <small>{{ it.source }} • {{ it.published_at }}</small>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</body>
+</html>

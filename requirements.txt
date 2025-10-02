@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+aiohttp
+feedparser
+transformers
+torch             # or install cpu-only wheel as needed
+apscheduler
+jinja2
+python-dotenv
